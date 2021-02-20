@@ -1,10 +1,16 @@
-import {BrowserRounter as Rounter, Switch, Rounte} from "react-rounter-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Home from "./screen/home";
 function App() {
-  return  <div >
-    <Rounter>
-      <Switch>
-        <rount/>
-      </Switch>
-    </Rounter>
-  </div>;
+  return (
+    <div>
+      <Router>
+        <Switch>
+          <Route path="/" component={Home} />
+        </Switch>
+      </Router>
+    </div>
+  );
+}
+
 export default App;
